@@ -1,2 +1,2 @@
-# blog
-My blogs
+# My blogs
+The repository contains my blogs.
