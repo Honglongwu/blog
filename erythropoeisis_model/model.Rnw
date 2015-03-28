@@ -1,0 +1,345 @@
+\documentclass{article}
+
+\title{Deterministic compartmental model for erythropoeisis}
+\author{Dr Suman Kumar}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+\tableofcontents
+\section{Model specification}
+
+\subsection{Introduction}
+Erythropoeisis is the process by which Red Blood Cells (RBCs) are formed from the mother cells (Stem Cells) inside the bone marrow.  RBCs contain Hemoglobin, oxygen carrier and are destroyed in the spleen and other reticulo-endothelial cells after a pre-determined time period due to shortening of their cell membranes.
+
+The model aims to describe the process of erythropoeisis in terms of differential equations.  After validating this model, we can combine various systems of erythropoeisis to understand dynamics of competing erythropoesis as seen in post bone marrow transplant settings.
+
+The model is deterministic one with delayed differential equations (DDE).  It is a compartmental model with following compartments:
+
+  \begin{enumerate}
+    \item Stem cells/BFUs (Burst Forming Units) \textbf{(S)}
+    \item CFUs (Colony Forming Units) \textbf{(C)}
+    \item Precursors \textbf{(P)}
+    \item Mature RBCs \textbf{(R)}
+    \item Hemoglobin \textbf{(H)}
+    \item There are two additional state variables:
+    \begin{enumerate}
+      \item New entrants into P compartment \textbf{(newP)}
+      \item New entrants into R compartment \textbf{(newR)}
+    \end{enumerate}
+  \end{enumerate}
+
+\subsection{S compartment}
+S compartment cells are very small in numbers. They are autonomous, with long term chances of self replication, albeit at a slow rate. They die with $1^{st}$ order kinetics. They continuously supply cells for next compartment (C).
+
+The process can be explained by following equation.
+
+  \begin{equation}
+    S'(t) = (ss - sc - sd) \cdot S(t)
+  \end{equation}
+
+where,
+  \begin{description}
+    \item[ss:] rate of $S \rightarrow S$
+    \item[sc:] rate of $S \rightarrow C$
+    \item[sd:] rate of $S \rightarrow Death$
+  \end{description}
+
+\subsection{C compartment}
+C compartment cells are more in numbers. They can again self replicate, can form next lineage of cells and can die. They follow $1^{st}$ order kinetics for all the three situations. The death of C cells is in negative feedback loop with hemoglobin concentration (which lead to oxygenation).
+
+The whole process can be expressed as follows:
+
+  \begin{equation} \label{eq:cd}
+    cd(t) = h \cdot H(t)
+  \end{equation}
+  
+  \begin{equation} \label{eq:C}
+    C'(t) = {sc \cdot S(t)} + {[cc - cp - cd(t)] \cdot C(t)}
+  \end{equation}
+
+where,
+  \begin{description}
+    \item[h:] determinant of $C \rightarrow Death$
+    \item[cc:] rate of $C \rightarrow C$
+    \item[cp:] rate of $C \rightarrow P$
+    \item[cd:] rate of $C \rightarrow Death$
+  \end{description}
+
+\subsubsection{Modification of cd(t)}
+On running the simulations, it is found that the feedback mechanism is not functioning properly.  There is too much of initial fluctuations after which the values stabilises to normal levels.
+
+The conceivable problem is in equation \ref{eq:cd}, in which the inhibition is only related to Hb.  It is not considering the fact that the value cannot be more than the remaining C compartment cells.  There has to be some sort of ceiling in death of C compartment cells.
+
+It should also be a feasible hypothesis that the upper value of cd should be constrained by some value of Hb.
+
+In real life situation, Hb regulates C cells death by regulating erythropoeitin (Epo).  Epo helps in reducing C compartment cell deaths.  At Hb = 0, there would be a maximum value of Epo secretion $(E_{max})$, which will not completely prevent deaths, it will only minimise deaths ($cd_{min}$ > 0).  As Hb increases, oxygenation improves, leading to decreasing levels of Epo.  After a certain value of Hb ($Hb_{thresh}$), blood viscosity increases, leading to decrease in oxygenation, thereby preventing any further decrease in Epo (I donot know if it leads to increase in Epo levels).  Another hypothesis would be that, as the Hb reaches a threshold ($Hb_{thresh}$), Epo production stops ($E_{min} \rightarrow 0$).  After that $Hb_{thresh}$, the cd will not increase further, thereby reaching a sort of ceiling.
+
+Equation \ref{eq:cd} can be modified as follows:
+
+  \begin{equation}
+    cd'(t) = h \cdot H(t) \cdot [H_{thresh} - H(t)]
+  \end{equation}
+  
+  where,
+  \begin{description}
+    \item[$\mathbf{H_{thresh}}:$] Threshold Hb value above which there is no further increase in cd
+  \end{description}
+  
+\subsection{P compartment}
+P compartment is a bit more complicated. Cells will proliferate and \emph{after a delay of time}, they will differentiate into mature R compartment cells. The cells die with $1^{st}$ order kinetics.
+This part of model will need DDE.  The process can be expressed as follows:
+  \begin{equation}
+    newP'(t) = cp \cdot C(t) - newP(t)
+  \end{equation}
+  \begin{equation} \label{eq:pr}
+    pr(t) = \frac{newP(t - \tau_{p}) \cdot e^{\tau_{p} \cdot pp}}{\int_{0}^{\tau_{p}}newP(t - u) \cdot e^{u \cdot pp} \cdot du}
+  \end{equation}
+  \begin{equation}
+    P'(t) = newP(t) + [pp - pd - pr(t)] \cdot P(t)
+  \end{equation}
+
+where,
+  \begin{description}
+    \item[$\mathbf{\tau_{p}}$:] lag period after which $P \rightarrow R$.  $newP(t) = 0,\textrm{for t} \leq \tau_{p}$
+    \item[pr:] rate of $P \rightarrow R$
+    \item[pp:] rate of $P \rightarrow P$
+    \item[pd:] rate of $P \rightarrow Death$
+  \end{description}
+
+\subsection{R compartment and H}
+R compartment cells do not proliferate, but only \emph{die after a lag time}. They carry hemoglobin r
+per cell. As depicted in equations \ref{eq:cd} and \ref{eq:C}, total hemoglobin (H) negatively regulates the death of C compartment cells.  The process can be depicted as follows:
+
+  \begin{equation}
+    newR'(t) = pr(t) \cdot P(t) - newR(t)
+  \end{equation}
+  
+  \begin{equation}
+    R'(t) = newR(t) - newR(t - \tau_{r})
+  \end{equation}
+  
+  \begin{equation}
+    H(t) = rh \cdot R(t)
+  \end{equation}
+
+where,
+  \begin{description}
+    \item[$\mathbf{\tau_{r}}$:] lag period after which $R \rightarrow Death$.  $newR(t) = 0, \textrm{for t} \leq \tau_{r}$
+    \item[pr:] rate of $P \rightarrow R$. Vide equation \ref{eq:pr}
+    \item[rh:] conversion factor $R \rightarrow H$
+  \end{description}
+
+\section{R code}
+
+\subsection{Parameters}
+  \begin{verbatim}
+  param.s <- c(sc = 0.01,
+             sd = 0.01,
+             ss = 0.02)
+  param.c <- c(cp = 0.1,
+             cc = 0.05,
+             h = 0.1)
+  param.p <- c(pp = 0.1,
+             pd = 0.05,
+             tau.p = 5)
+  param.r <- c(tau.r = 100,
+             rh = 1e-3)
+  tf <- 500
+  PARAMETERS <- c(param.s,param.c,param.p,param.r,tf)
+  \end{verbatim}
+
+\subsection{State variables}
+
+  \begin{verbatim}
+    yini <- c(S = 1e5,
+          C = 0,
+          P = 0,
+          R = 0,
+          newP = 0,
+          newR = 0)
+  \end{verbatim}
+
+\subsection{Integrator function}
+
+  \begin{verbatim}
+    foo <- function(t, y, param,...) {
+      with(as.list(c(y, param)), {
+      dS <- (ss - sc - sd) * S
+      cd <- rh * h * R
+      dC <- (sc * S) + (cc - cp - cd) * C
+      dnewP <- (cp * C) - newP
+      tlagP <- t - as.integer(seq(tau.p,to=0))
+      lagnewP <- rep(0,length.out=length(tlagP))
+      for (i in 1:length(tlagP)) {
+        if (tlagP[i] <= 0) {
+          lagnewP[i] <- 0
+        } else {
+          lagnewP[i] <- lagvalue(tlagP[i],5)
+        }
+      }
+      sum.int <- sum(lagnewP*exp(pp*(tau.p:0)))
+      sum.int <- ifelse(sum.int == 0, 1, sum.int)
+      pr <- (lagnewP[1]*exp(pp*tau.p))/sum.int
+      dP <- newP + (pp - pd - pr) * P
+      tlagR <- t - as.integer(tau.r)
+      dnewR <- (pr * P) - newR
+      if (tlagR > 0) {
+        lagnewR <- lagvalue(tlagR,6)
+      } else {
+        lagnewR <- 0
+      }
+      dR <- newR - lagnewR
+      return(list(c(dS, dC, dP, dR, dnewP, dnewR), Hb = rh*R))
+      })
+    }
+  \end{verbatim}
+  
+\subsection{Optional event data}
+
+  \begin{verbatim}
+    eventdat <- data.frame(var = c('S','S'), ...
+    time = c(200,300),value = c(0.5,2), method = c("mult","mult"))
+  \end{verbatim}
+
+\subsection{DDE solver}
+
+  \begin{verbatim}
+    TIME <- seq(from  = 0, to = tf, by = 0.1)
+    sol <- dede(y = yini, times = TIME, ...
+    func = foo, parms = PARAMETERS,events=list(data=eventdat))
+  \end{verbatim}
+
+\subsection{Plottings}
+
+  \begin{verbatim}
+    plot(sol)
+  \end{verbatim}
+  
+\subsection{Diagnostics}
+
+  \begin{verbatim}
+    diagnostics(sol)
+  \end{verbatim}
+  
+\section{Simulation}
+
+\subsection{Setting up initial parameters and state variables}
+S compartment parameters are set, so that to maintain a steady outflow into C compartment and stable S population.  C compartment death is a dynamic process which increases with increasing H.  C proliferation rate is about 5 times of that of S compartment. In contrast to S compartment (in which self proliferation is 2 times that of differentiation), C compartment is more into differentiation into P rather than self proliferation. P compartment has much higher proliferation rate, with a lag time of 5 days before it converts into R compartment.
+
+The usual normal values of few of the parameters are as follows:
+  
+  \begin{itemize}
+    \item RBC = 5 $\cdot 10^{6}$/$\mu$L
+    \item Hb = 15 g/dL = 15 $\cdot 10^{-4}$ g/$\mu$L
+    \item MCH (Hb present in one RBC) = 30 pg = 30 $\cdot 10^{-12}$ g
+    \item We can calculate, 1 RBC is equivalent to $\mathbf{3 \cdot 10^{-10}}$ g of Hb.
+  \end{itemize}
+<<>>=
+param.s <- c(sc = 0.01,     # S to C
+             sd = 0.01,     # Death
+             ss = 0.02)     # S to S
+param.c <- c(cp = 0.1,     # C to P
+             cc = 0.05,     # C to C
+             h = 0.1)      # Controls Deaths in C comp
+param.p <- c(pp = 0.1,     # P to P
+             pd = 0.05,     # Death
+             tau.p = 5)  # time after which P differentiates into R
+param.r <- c(tau.r = 100,  # time after which R dies
+             rh = 1e-3,
+             hmax = 8)     # Factor for converting R to H
+tf <- 1000
+PARAMETERS <- c(param.s,param.c,param.p,param.r,tf)
+
+@
+
+<<echo=TRUE,fig=TRUE>>=
+#----STATE VARIABLES----------
+
+yini <- c(S = 1e5,  # Stem cell/BFU compartment
+          C = 0,  # CFU compartment
+          P = 0,  # Precursor compartment
+          R = 0,  # RBC compartment
+          newP = 0,
+          newR = 0)
+          #cd = 0)
+#------WORK HORSE FUNCTION-----------
+
+foo <- function(t, y, param,...) {
+  with(as.list(c(y, param)), {
+    
+    if (t >= 500) tau.r <- 60
+    dS <- (ss - sc - sd) * S
+    #dcd <- (rh * h * R * (hmax - (rh*R))) - cd   # Determinant of death in C compartment.
+    cd <- rh * h * R
+    dC <- (sc * S) + (cc - cp - cd) * C
+    dnewP <- (cp * C) - newP  # new P entrant at time t
+    #if (t > 0) browser()
+    tlagP <- t - as.integer(seq(tau.p,to=0))
+    lagnewP <- rep(0,length.out=length(tlagP))
+    for (i in 1:length(tlagP)) {
+      if (tlagP[i] <= 0) {
+        lagnewP[i] <- 0
+      } else {
+        lagnewP[i] <- lagvalue(tlagP[i],5)
+      }
+    }
+    sum.int <- sum(lagnewP*exp(pp*(tau.p:0)))
+    sum.int <- ifelse(sum.int == 0, 1, sum.int)
+    pr <- (lagnewP[1]*exp(pp*tau.p))/sum.int
+    dP <- newP + (pp - pd - pr) * P
+    tlagR <- t - as.integer(tau.r)
+    dnewR <- (pr * P) - newR
+    #if (lagvalue(tlagR,4) > 0) browser()
+    if (tlagR > 0) {
+      lagnewR <- lagvalue(tlagR,6)
+    } else {
+      lagnewR <- 0
+    }
+    #if (lagR > 0) browser()
+    dR <- newR - lagnewR
+
+    return(list(c(dS, dC, dP, dR, dnewP, dnewR), Hb = rh*R))  #, dcd
+  })
+}
+
+#-------EVENT DATA----------------
+#eventdat <- data.frame(var = c('S','S'), time = c(200,300),value = c(0.5,2), method = c("mult","mult"))
+
+
+#-------DIFFERENTIAL EQUATION--------------
+
+TIME <- seq(from  = 0, to = tf, by = 1)
+sol <- dede(y = yini, times = TIME, func = foo, parms = PARAMETERS) #,events=list(data=eventdat))
+
+plot(sol)
+@
+
+\section{Acknowledgement}
+
+My sincerest thanks and gratitude to the following:
+
+\begin{enumerate}
+  \item{R Core Team (2014). R: A language and environment for statistical
+  computing. R Foundation for Statistical Computing, Vienna,
+  Austria. URL http://www.R-project.org/.}
+  \item{Karline Soetaert, Thomas Petzoldt, R. Woodrow Setzer for deSolve package (version 0.10-10)}
+  \item{Winston Chang (2015). shiny: Web Application Framework for R. R
+  package version 0.11. http://CRAN.R-project.org/package=shiny}
+  \item{My teachers at Department of Hematology, All India Institute of Medical Sciences, New Delhi, India for teaching me fundamentals of Hematology}
+\end{enumerate}
+
+The above work is completed by me over last 1 year based on my understanding on erythropoeisis as accumulated by reading textbooks and articles over years. This work has not been substantiated by any experiment.
+
+\textbf{The user of this model is responsible for the consequences of running and using the simulation.}
+
+\textbf{The user is free to use, modify, distribute, further develop the model and publish the results coming out of the simulation after informing the author and citing the original author and the following web address.}
+
+\begin{vertabim}
+https://github.com/sumprain/blog/tree/master/erythropoeisis\_model
+\end{verbatim}
+
+
+
+\end{document}
