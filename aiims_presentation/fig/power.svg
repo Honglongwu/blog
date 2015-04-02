@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="690.37598"
+   height="419.24258"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path4161"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5408"
+       style="overflow:visible">
+      <path
+         id="path5410"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL-3"
+       style="overflow:visible">
+      <path
+         id="path3930-9"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL"
+       style="overflow:visible">
+      <path
+         id="path3930"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5408-5"
+       style="overflow:visible">
+      <path
+         id="path5410-6"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL-3-3"
+       style="overflow:visible">
+      <path
+         id="path3930-9-3"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL-1"
+       style="overflow:visible">
+      <path
+         id="path3930-1"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="StopL-0"
+       style="overflow:visible">
+      <path
+         id="path3930-4"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="StopL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker3252"
+       style="overflow:visible">
+      <path
+         id="path3254"
+         d="M 0,5.65 0,-5.65"
+         style="fill:none;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4161-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="342.33953"
+     inkscape:cy="32.284104"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1317"
+     inkscape:window-height="744"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.660469,-31.117973)">
+    <g
+       transform="matrix(0.65823232,0,0,0.65823232,-277.87369,-276.23325)"
+       id="layer1-1"
+       inkscape:label="Layer 1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776"
+         d="m 695.90644,467.93337 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5"
+         d="m 842.76505,467.93337 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-5"
+         transform="matrix(0.59270689,0,0,0.59270689,711.04226,257.18905)">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+           d="m 126.85714,452.07647 372.85715,0"
+           id="path4383"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0700;fill-opacity:1;stroke:none"
+           id="path2985"
+           sodipodi:cx="313.57144"
+           sodipodi:cy="451.64789"
+           sodipodi:rx="17.857143"
+           sodipodi:ry="17.857143"
+           d="m 331.42859,451.64789 c 0,9.86223 -7.99492,17.85714 -17.85715,17.85714 -9.86223,0 -17.85714,-7.99491 -17.85714,-17.85714 0,-9.86223 7.99491,-17.85715 17.85714,-17.85715 9.86223,0 17.85715,7.99492 17.85715,17.85715 z" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367"
+         y="615.81775"
+         x="842.86792"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="615.81775"
+           x="842.86792"
+           id="tspan5369"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371"
+           y="637.05042"
+           x="842.86792"
+           sodipodi:role="line">Effect Size (B &gt; A)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5373"
+         y="623.4975"
+         x="695.90643"
+         style="font-size:26.49510765px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="623.4975"
+           x="695.90643"
+           id="tspan5375"
+           sodipodi:role="line">0</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-4"
+         d="m 695.15483,467.59664 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5-8"
+         d="m 548.29622,467.59664 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367-9"
+         y="616.6153"
+         x="545.93201"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="616.6153"
+           x="545.93201"
+           id="tspan5369-8"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371-3"
+           y="637.84796"
+           x="545.93201"
+           sodipodi:role="line">Effect Size (A &gt; B)</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.65823232,0,0,0.65823232,-278.07667,-137.2522)"
+       id="layer1-9"
+       inkscape:label="Layer 1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-3"
+         d="m 695.90644,467.93337 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5-87"
+         d="m 842.76505,467.93337 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-5-0"
+         transform="matrix(0.59270689,0,0,0.59270689,595.04226,257.18905)">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+           d="m 126.85714,452.07647 372.85715,0"
+           id="path4383-7"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0700;fill-opacity:1;stroke:none"
+           id="path2985-0"
+           sodipodi:cx="313.57144"
+           sodipodi:cy="451.64789"
+           sodipodi:rx="17.857143"
+           sodipodi:ry="17.857143"
+           d="m 331.42859,451.64789 c 0,9.86223 -7.99492,17.85714 -17.85715,17.85714 -9.86223,0 -17.85714,-7.99491 -17.85714,-17.85714 0,-9.86223 7.99491,-17.85715 17.85714,-17.85715 9.86223,0 17.85715,7.99492 17.85715,17.85715 z" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367-93"
+         y="615.81775"
+         x="842.86792"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="615.81775"
+           x="842.86792"
+           id="tspan5369-0"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371-8"
+           y="637.05042"
+           x="842.86792"
+           sodipodi:role="line">Effect Size (B &gt; A)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5373-5"
+         y="623.4975"
+         x="695.90643"
+         style="font-size:26.49510765px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="623.4975"
+           x="695.90643"
+           id="tspan5375-1"
+           sodipodi:role="line">0</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-4-1"
+         d="m 695.15483,467.59664 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5-8-4"
+         d="m 548.29622,467.59664 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367-9-8"
+         y="616.6153"
+         x="545.93201"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="616.6153"
+           x="545.93201"
+           id="tspan5369-8-1"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371-3-6"
+           y="637.84796"
+           x="545.93201"
+           sodipodi:role="line">Effect Size (A &gt; B)</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="529.71429"
+       y="75.219322"
+       id="text3215"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3217"
+         x="529.71429"
+         y="75.219322">INCREASE PROPORTION</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="530.46399"
+       y="213.52527"
+       id="text3215-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3217-6"
+         x="530.46399"
+         y="213.52527">DECREASE PROPORTION</tspan></text>
+    <g
+       transform="matrix(0.65823232,0,0,0.65823232,-278.74528,28.155427)"
+       id="layer1-9-1"
+       inkscape:label="Layer 1">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-3-2"
+         d="m 695.90644,467.93337 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5-87-4"
+         d="m 842.76505,467.93337 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <g
+         inkscape:label="Layer 1"
+         id="layer1-5-0-0"
+         transform="matrix(0.59270689,0,0,0.59270689,595.04226,257.18905)">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#StopL);marker-end:url(#StopL)"
+           d="m 126.85714,452.07647 372.85715,0"
+           id="path4383-7-4"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:#ff0700;fill-opacity:1;stroke:none"
+           id="path2985-0-2"
+           sodipodi:cx="313.57144"
+           sodipodi:cy="451.64789"
+           sodipodi:rx="17.857143"
+           sodipodi:ry="17.857143"
+           d="m 331.42859,451.64789 c 0,9.86223 -7.99492,17.85714 -17.85715,17.85714 -9.86223,0 -17.85714,-7.99491 -17.85714,-17.85714 0,-9.86223 7.99491,-17.85715 17.85714,-17.85715 9.86223,0 17.85715,7.99492 17.85715,17.85715 z" />
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367-93-8"
+         y="615.81775"
+         x="842.86792"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="615.81775"
+           x="842.86792"
+           id="tspan5369-0-9"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371-8-3"
+           y="637.05042"
+           x="842.86792"
+           sodipodi:role="line">Effect Size (B &gt; A)</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5373-5-5"
+         y="623.4975"
+         x="695.90643"
+         style="font-size:26.49510765px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="623.4975"
+           x="695.90643"
+           id="tspan5375-1-0"
+           sodipodi:role="line">0</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-4-1-2"
+         d="m 695.15483,467.59664 0,117.33547"
+         style="fill:none;stroke:#ff0000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path4776-5-8-4-9"
+         d="m 548.29622,467.59664 0,117.33547"
+         style="fill:none;stroke:#000000;stroke-width:1.32475543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:5.29902155, 1.32475539;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text5367-9-8-9"
+         y="616.6153"
+         x="545.93201"
+         style="font-size:16.9861393px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="616.6153"
+           x="545.93201"
+           id="tspan5369-8-1-4"
+           sodipodi:role="line">Clinically significant</tspan><tspan
+           id="tspan5371-3-6-8"
+           y="637.84796"
+           x="545.93201"
+           sodipodi:role="line">Effect Size (A &gt; B)</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="200"
+       y="366.93362"
+       id="text3317"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3319"
+         x="200"
+         y="366.93362">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="284"
+       y="351.79074"
+       id="text3321"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3323"
+         x="284"
+         y="351.79074">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.92328072px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="393.32996"
+       y="333.00793"
+       id="text3325"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3327"
+         x="393.32996"
+         y="333.00793"
+         style="font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Arial Bold">1: Decrease width by</tspan><tspan
+         sodipodi:role="line"
+         x="393.32996"
+         y="354.16205"
+         id="tspan3329"
+         style="text-align:start;text-anchor:start">- Increasing sample size</tspan><tspan
+         sodipodi:role="line"
+         x="393.32996"
+         y="375.31613"
+         id="tspan3331"
+         style="text-align:start;text-anchor:start">- Decreasing pop variability</tspan><tspan
+         sodipodi:role="line"
+         x="393.32996"
+         y="396.47025"
+         id="tspan3333"
+         style="text-align:start;text-anchor:start">- Decreasing confidence levels (say to 90%)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.1078968px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="530.18347"
+       y="145.22621"
+       id="text3335"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3337"
+         x="530.18347"
+         y="145.22621">INCREASES POWER</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
+       d="m 532.85714,118.07647 0,-38.571431"
+       id="path3339"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
+       d="m 532.57143,150.79075 0,38.57143"
+       id="path3339-2"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.92328072px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="390.87497"
+       y="422.80505"
+       id="text3325-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3327-2"
+         x="390.87497"
+         y="422.80505"
+         style="font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Arial Bold">2: Increase gap between 0</tspan><tspan
+         sodipodi:role="line"
+         x="390.87497"
+         y="443.95917"
+         style="font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Arial Bold"
+         id="tspan5067">and clinically relevant effect size</tspan><tspan
+         sodipodi:role="line"
+         x="390.87497"
+         y="465.11325"
+         id="tspan3333-8"
+         style="text-align:start;text-anchor:start" /></text>
+  </g>
+</svg>
